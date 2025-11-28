@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C J Harshitha's Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <style>
+        /* Inline CSS for image placement (works even if style.css is separate) */
+
+        header {
+            position: relative;
+            background: linear-gradient(135deg, #4b7bec, #20bf6b);
+            color: black;
+            padding: 40px 40px 80px 40px;
+            text-align: left;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        }
+
+        nav {
+            background: #222;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body onload="loadXMLDoc()">
+
+<header>
+    <div class="header-content">
+        <div>
+            <h1>My Profile</h1>
+            <p class="tagline">Web Developer | Designer | Programmer</p>
+        </div>
+
+        <!-- ⭐ INSERTED IMAGE SOURCE HERE -->
+        <img src="images/me.jpg" alt="Profile Photo" class="profile-pic">
+        <!-- Replace profile.jpg with your actual photo -->
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate developer who loves building websites with HTML, CSS, JS, PHP, MySQL.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div id="skill-output">Problem solving,analytical thinking,data structure and algorithms</div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div id="project-output">Loading Projects from XML...</div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm" onsubmit="return validateForm()">
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label>USN:</label>
+        <input type="text" id="usn" placeholder="Enter your USN" required>
+
+        <label>Address:</label>
+        <textarea id="address" placeholder="enter your address"></textarea>
+        <button type="submit">Send</button>
+
+<footer>
+    <p>© 2025 My Portfolio Website</p>
+</footer>
+<section id="about">
+    <h2>About</h2>
+    <p>
+        I am a passionate developer who loves building websites with HTML, CSS, JS, PHP, MySQL.
+    </p>
+
+    <!-- Social & Resume Buttons -->
+    <div class="social-container">
+
+        <!-- Resume Download -->
+        <a href="resume.pdf" download class="btn resume-btn">
+            📄 Download Resume
+        </a>
+
+        <!-- GitHub Link -->
+        <a href="https://github.com/YourGitHubUser" target="_blank" class="btn github-btn">
+            <img src="github.png" class="icon"> GitHub
+        </a>
+
+        <!-- Twitter Link -->
+        <a href="https://twitter.com/YourTwitterUser" target="_blank" class="btn twitter-btn">
+            <img src="twitter.png" class="icon"> Twitter
+        </a>
+
+    </div>
+</section>
+
+
+</body>
+</html>
